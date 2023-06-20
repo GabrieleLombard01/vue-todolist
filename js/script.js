@@ -10,23 +10,23 @@ const app = Vue.createApp({
             tasks: [
                 {
                   text: 'Fare colloquio per Amazon',
-                  done: '',
+                  done: true,
                 },
                 {
                     text: 'Fare colloquio per Decathlon',
-                    done: '',
+                    done: true,
                 },
                 {
                     text: 'Fare colloquio per Coca Cola',
-                    done: '',
+                    done: false,
                 },
                 {
                     text: 'Fare colloquio per Netflix',
-                    done: ' ',
+                    done: false,
                 },
                 {
                     text: 'Fare colloquio per Meta',
-                    done: ' ',
+                    done: true,
                 },
               ], 
         }
