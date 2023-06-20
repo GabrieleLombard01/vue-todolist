@@ -1,16 +1,17 @@
-//JS RESET
-console.log('JS OK')
+// JS RESET
+console.log('JS OK');
 
-//Vue RESET
+// Vue RESET
 console.log('Vue OK', Vue);
 
 const app = Vue.createApp({
     data() {
         return {
+            newTask: '',
             tasks: [
                 {
-                  text: 'Fare colloquio per Amazon',
-                  done: true,
+                    text: 'Fare colloquio per Amazon',
+                    done: true,
                 },
                 {
                     text: 'Fare colloquio per Decathlon',
@@ -28,9 +29,23 @@ const app = Vue.createApp({
                     text: 'Fare colloquio per Meta',
                     done: true,
                 },
-              ], 
-        }
-    }
+            ],
+        };
+    },
+    methods: {
+        addTask() {
+            if (this.newTask.trim() !== '') {
+                this.tasks.push({
+                    text: this.newTask,
+                    done: false,
+                });
+                this.newTask = '';
+            }
+        },
+        removeTask(index) {
+            this.tasks.splice(index, 1);
+        },
+    },
 });
-    
+
 app.mount('#root');

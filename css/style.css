@@ -13,5 +13,14 @@
 main{
     background-color: #58626c;
     color: white;
+    padding: 50px 0 50px 0;
+}
+li{
+    width: 60%;
+    margin: auto;
 }
 /*Utilties*/
+.input-group{
+    width: 70%;
+    margin: auto;
+}
