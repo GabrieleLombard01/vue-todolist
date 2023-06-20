@@ -10,5 +10,8 @@
 /*Pseudo-classes*/
 
 /*Generics*/
-
+main{
+    background-color: #58626c;
+    color: white;
+}
 /*Utilties*/
